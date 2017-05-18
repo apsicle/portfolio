@@ -6,9 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src='js/modernizr.js'></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
 
-<body>
 	<div class="navbar-container">
 		<ul class="topnav" id="main-topnav">
 			<li><a href="index.html">About</a></li>
@@ -16,23 +14,30 @@
 		</ul>
 	</div>
 
+</head>
+
+<body>
+
 	<div id="carousel_page">
-		<div class="my_button" onclick="move(0)">Move 1</div>
-		<div class="my_button" onclick="move(1)">Move 2</div>
-		<div class="my_button" onclick="move(2)">Move 3</div>
-		<div class="my_button" onclick="move(3)">Move 4</div>
-		<div class="my_button" onclick="move(4)">Move 5</div>
-		<section class="container">
+		<section class="button_container">
+			<div class="my_button" onclick="move(0)">Move 1</div>
+			<div class="my_button" onclick="move(1)">Move 2</div>
+			<div class="my_button" onclick="move(2)">Move 3</div>
+			<div class="my_button" onclick="move(3)">Move 4</div>
+			<div class="my_button" onclick="move(4)">Move 5</div>
+		</section>
+
+		<section class="carousel_container">
 		  <div id="carousel">
 		    <figure onclick="move(0)" id="fig_1">
 		    	<img class="carousel_image" src="carousel_images/flower_dance_girl_color.png">
-		    	<video width="450" height="300" class="overlay">
+		    	<video class="overlay">
 		    		<source src="carousel_images/flower_dance_girl_color_overlay.mp4" type="video/mp4">
 		    		Your browser does not support HTML5 video.
 		    	</video>
 		    </figure>
 		    <figure onclick="move(1)" id="fig_2">
-		    	<img class="carousel_image" src="carousel_images/heroes.jpg">
+		    	<img class="carousel_image" src="carousel_images/octosoccer.png">
 		    	<video class="overlay">
 		    		<source src="carousel_images/card_video.mp4" type="video/mp4">
 		    		Your browser does not support HTML5 video.
@@ -42,10 +47,10 @@
 		    	<img class="carousel_image" src="carousel_images/nyhue3recolorauto.jpg">
 		    </figure>
 		    <figure onclick="move(3)" id="fig_4">
-		    	<img class="carousel_image" src="carousel_images/oldman.jpg">
+		    	<img class="carousel_image" src="carousel_images/crimson.png">
 		    </figure>
 		    <figure onclick="move(4)" id="fig_5">
-		    	<img class="carousel_image" src="carousel_images/stonehenge-sunrisehue3recolorauto.jpg">
+		    	<img class="carousel_image" src="carousel_images/card.png">
 		    </figure>
 		  </div>
 		</section>

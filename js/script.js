@@ -70,23 +70,35 @@ function display_info(num) {
 	switch(num) {
 		case 0:
 			title.innerHTML = "Rain Drops";
-			description.innerHTML = "<p>This is my heroic attempt to write a description for this project.</p>"
+			description.innerHTML = "<p> Inspired by . Is intended to evoke a feeling of wonder in p5. The default \
+			image is from <a class='my_link' href='http://www.zerochan.net/1431763'>here</a> Note: suhuii and I turned this into a chrome new tab \
+			extension with random images from Unsplash."
+			//description.innerHTML = "<p>This is my heroic attempt to write a description for this project.</p>"
 			break;
 		case 1:
-			title.innerHTML = "Dota Heroes";
+			title.innerHTML = "Octosoccer";
+			description.innerHTML = "<p>Octosoccer was an experiment in creating an online multiplayer game. \
+			Sprint, score, juke, trash talk. Download <a href='files/octosoccer_client.exe'>the game</a>.</p>"
 			break;
 		case 2:
-			title.innerHTML = "Skyline";
+			title.innerHTML = "8-Bitifier";
+			description.innerHTML = "<p>Turns your everyday images into 8-bit art! Written in Python using scipy, hosted on \
+			<a href='http://apsicle.pythonanywhere.com/main'>pythonanywhere</a>.</p>"
 			break;
 		case 3:
-			title.innerHTML = "Wisdom";
+			title.innerHTML = "Crimson";
+			description.innerHTML = "<p>Elemental spell-based dungeoncrawler / roguelike (on hold). View it \
+			on <a href='https://github.com/apsicle/crimson'>Github</a>.</p>"
 			break;
 		case 4:
-			title.innerHTML = "Stone Henge";
+			title.innerHTML = "Happy Holidays";
+			description.innerHTML = "<p>Inspired by a friend of mine who always takes the time to lovingly craft personal greeting cards. \
+			I decided to make a Christmas card for her while exploring CSS transitions, HTML canvas, and object-oriented programming in Javascript."
 			break;
 		}
 
 }
 
+$(active_page).get(0).style.background = "black";
 $('.sidebar', active_page).get(0).style.opacity = 1;
 calc_angles();

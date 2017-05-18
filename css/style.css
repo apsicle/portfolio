@@ -1,7 +1,20 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	font-family: 'Exo 2', sans-serif;
 	background-color: white;
 	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+/* across all pages */
+.my_link {
+	color = 
 }
 
 /*
@@ -35,7 +48,9 @@ ul.topnav {
     list-style-type:none;
     margin: 0;
     padding: 0;
+    width: 100%;
     overflow: hidden;
+    position: relative;
     background-color: black;
 }
 
@@ -59,20 +74,32 @@ ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li.icon {display:none;}
 
-/*Image carousel containers and video overlays*/
-#carousel_page{
-	background: blue;
+/* About page */
+
+#about_page {
+	background: white;
 	position: relative;
 	width: 100%;
 	height: 100%;
-	margin-top:10%;
 	display: inline-block;
+	transition: background-color 1s ease-out;
 }
 
-.container {
-	background:red;
+/*Image carousel containers and video overlays*/
+#carousel_page{
+	background: white;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	transition: background-color 1s ease-out;
+}
+
+.carousel_container {
 	margin: 0 auto; 
-	margin-top: 150px;
+	margin-top: 10%;
+	margin-left: 25%;
 	width: 600px;
 	height: 400px;
 	position: relative;
@@ -92,8 +119,8 @@ ul.topnav li.icon {display:none;}
 	margin: 0;
 	display: block;
 	position: absolute;
-	width: 450px;
-	height: 300px;
+	width: 500px;
+	height: 375px;
 	left: 30px;
 	top: 30px;
 	transition: transform 1.0s ease, scale 1.0s ease;
@@ -106,20 +133,29 @@ ul.topnav li.icon {display:none;}
 }
 
 .overlay {
-	width: 450px;
-	height: 300px;
-	position: absolute;
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    max-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+    overflow: hidden;
 	opacity: 0;
 	transition: all 0.5s ease-out;
+
 }
 
 /*Buttons to move through the carousel*/
 
+.button_container {
+	position: relative;
+	margin-left: 25%;
+}
+
 .my_button {
-	color: black;
+	color: white;
 	font-size: 24px;
 	margin: 10px;
-	left: 20%;
 	position: relative;
 	display: inline-block;
 }
@@ -128,7 +164,6 @@ ul.topnav li.icon {display:none;}
 
 .sidebar {
 	opacity: 0;
-	background: green;
 	box-shadow: 10px;
 	border-width: 2px;
 	border-color: white;
@@ -137,10 +172,10 @@ ul.topnav li.icon {display:none;}
 
 	padding-left: 5px;
 	padding-top: 5px;
-	margin: 0 auto;
-	margin-top: 5%;
+
 	margin-left: 10%;
-	width: 500px;
+	
+	width: 25%;
 	height: 80%;
 	position: absolute;
 	display: inline-block;
@@ -149,13 +184,13 @@ ul.topnav li.icon {display:none;}
 }
 
 #item_title {
-	color: black;
+	color: white;
 	text-align: center;
 	font-size: 32px;
 }
 
 #item_description {
-	color: black;
+	color: white;
 	text-align: left;
 	font-size: 28px;
 }
