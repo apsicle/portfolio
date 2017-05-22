@@ -1,6 +1,6 @@
 "use strict";
 let n = 5; //number of images, i.e. sides of the carousel
-let panel_width = 800; //width of a panel, i.e. length of a side on the polygon
+let panel_width = window.innerWidth * .4167; //width of a panel, i.e. length of a side on the polygon
 
 let active_page = document.getElementById("carousel_page")
 let carousel = document.getElementById("carousel");
@@ -83,8 +83,8 @@ function display_info(num) {
 		case 0:
 			refresh_content(title, "<a class='my_link' href='https://github.com/suhuiii/Colorburst'>Rain Drops</a>");
 			refresh_content(description, "<p> Inspired by summer storms that add a splash of color into long, \
-			hot, summer day. Created in p5. The default image is from <a class='my_link' \
-			href='http://www.zerochan.net/1431763'>here</a> Note: suhuii and I turned this into a chrome new tab \
+			hot, summer days. Created in p5. The default image is from <a class='my_link' \
+			href='http://www.zerochan.net/1431763'>here</a> Note: suhuiii and I turned this into a chrome new tab \
 			extension with random images from Unsplash.");
 			break;
 		case 1:
