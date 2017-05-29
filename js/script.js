@@ -22,7 +22,8 @@ function calc_angles() {
 	let angle_rad = angle * Math.PI / 180;
 	let z_proj = panel_width / (2 * Math.tan(angle_rad / 2));
 	for(let i = 0; i < n; i++) {
-		let cur_z = 20 - Math.abs(20*(2 - i));
+		//let cur_z = 20 - Math.abs(20*(2 - i)); //this vertically displaces the panels for effect
+		let cur_z = 0;
 		let current_rotation = angle * (i);
 		let figure = figures[i];
 		figure.style.transform = "rotateY(" + String(current_rotation) + "deg) rotateX(" + String(cur_z) + "deg) translateZ(" + String(z_proj) + "px)";
@@ -144,6 +145,7 @@ $(document).ready(function() {
 
 /* We need to wait for images, fonts, videos to load. That's this function: */
 $(window).load(function() {
+	$('#carousel_page').get(0).style.opacity = 1;
 	$(active_page).get(0).style.background = "black";
 	calc_angles();
 });

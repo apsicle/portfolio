@@ -23,7 +23,7 @@ body {
 	width: 50vw;
 	height: auto;
 	margin-left: 5vw;
-	margin-top: 5vh;
+	margin-top: 5vw;
 	font-size: 3vh;
 	position: relative;
 	vertical-align: top;
@@ -34,7 +34,7 @@ body {
 	width: 30vw;
 	height: auto;
 	margin-left: 5vw;
-	margin-top: 5vh;
+	margin-top: 5vw;
 	position: relative;
 	display: inline-block;
 }
@@ -173,7 +173,8 @@ ul.topnav li.icon {display:none;}
 
 .button_container {
 	position: relative;
-	margin-left: 20vw;
+	margin-left: 17vw;
+	margin-top: 10vh;
 	text-align: left;
 }
 
@@ -181,8 +182,8 @@ ul.topnav li.icon {display:none;}
 
 .my_button {
 	color: white;
-	font-size: 2.2vh;
-	margin: 0.52vw;
+	font-size: 2.4vh;
+	margin: 1vw;
 	position: relative;
 	display: inline-block;
 }
@@ -201,10 +202,10 @@ ul.topnav li.icon {display:none;}
 	padding-left: .25vw;
 	padding-top: 0;
 
-	margin-left: 10vw;
+	margin-left: 15vw;
 	
-	width: 25vw;
-	height: 80vh;
+	width: 20vw;
+	height: 50vh;
 	position: absolute;
 	display: inline-block;
 
