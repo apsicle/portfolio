@@ -147,6 +147,7 @@ $(document).ready(function() {
 $(window).load(function() {
 	$('#carousel_page').get(0).style.opacity = 1;
 	$(active_page).get(0).style.background = "black";
+	$('body').get(0).style.background = "black";
 	calc_angles();
 });
 

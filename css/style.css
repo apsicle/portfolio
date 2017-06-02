@@ -10,6 +10,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	transition: background-color 1s ease-out;
 }
 
 /* across all pages */
@@ -95,7 +96,7 @@ ul.topnav li a {
     padding: 1vw 1vh;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 2.2vh;
+    font-size: 2.4vh;
 }
 
 ul.topnav li a:hover {background-color: #555;}
@@ -125,8 +126,8 @@ ul.topnav li.icon {display:none;}
 
 .carousel_container {
 	margin: 0 auto; 
-	margin-top: 10%;
-	margin-left: 20%;
+	margin-top: 10vh;
+	margin-left: 20vw;
 	width: 41.67vw;
 	height: 41.67vh;
 	position: relative;
@@ -147,7 +148,7 @@ ul.topnav li.icon {display:none;}
 	display: block;
 	position: absolute;
 	width: 33.33vw;
-	height: 33.33vh;
+	height: 37.33vh;
 	left: 1.5vw;
 	top: 2.8vh;
 	transition: transform 1.0s ease, scale 1.0s ease;
@@ -173,7 +174,7 @@ ul.topnav li.icon {display:none;}
 
 .button_container {
 	position: relative;
-	margin-left: 17vw;
+	margin-left: 16vw;
 	margin-top: 10vh;
 	text-align: left;
 }
@@ -182,7 +183,7 @@ ul.topnav li.icon {display:none;}
 
 .my_button {
 	color: white;
-	font-size: 2.4vh;
+	font-size: 2.7vh;
 	margin: 1vw;
 	position: relative;
 	display: inline-block;
@@ -215,7 +216,7 @@ ul.topnav li.icon {display:none;}
 #item_title {
 	color: white;
 	text-align: center;
-	font-size: 3vh;
+	font-size: 3.5vh;
 	opacity: 1;
 	transition: opacity 0.5s linear;
 }
@@ -223,7 +224,7 @@ ul.topnav li.icon {display:none;}
 #item_description {
 	color: white;
 	text-align: left;
-	font-size: 2.4vh;
+	font-size: 2.7vh;
 	opacity: 1;
 	transition: opacity 0.5s linear;
 }
