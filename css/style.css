@@ -200,12 +200,12 @@ ul.topnav li.icon {display:none;}
 
 .button_container {
 	position: relative;
-	margin-left: 16vw;
+	margin-left: 15vw;
 	margin-top: 10vh;
 	text-align: left;
 }
 
-.my_button:hover {transform: scale(1.1, 1.1); cursor: pointer;}
+.my_button:hover {transform: scale(1.2, 1.2); cursor: pointer;}
 
 .my_button {
 	color: white;
@@ -213,6 +213,7 @@ ul.topnav li.icon {display:none;}
 	margin: 1vw;
 	position: relative;
 	display: inline-block;
+	transition: transform .5s ease-out;
 }
 
 /*Side bar with titles of projects / descriptions*/
