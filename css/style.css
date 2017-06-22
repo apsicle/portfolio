@@ -102,6 +102,8 @@ ul.topnav li.icon {display:none;}
 	display: inline-block;
 }
 
+#column1_1:hover {cursor: pointer;}
+
 #column1_1 img {
 	width: auto;
 	height: auto;

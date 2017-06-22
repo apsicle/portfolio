@@ -19,15 +19,15 @@ let contact = "\
 		Personal Site: <a style='color: black;' class='my_link' href='http://ryancyan.com/'>Soon to be repurposed</a>"
 
 class Texter {
-	constructor(target, message, index, interval, active, callback) {
+	constructor(target, message, index, cursorInterval, textInterval, active, callback) {
 		// HTML target to append to, message to append, index is 
 		this.target = target;
 		this.message = message;
 		this.index = index;
 		this.active = active;
 		this.cursorOn = false;
-		this.cursorBlinkController = {'dt': 0, 'interval': 750};
-		this.appendTextController = {'dt': 0, 'interval': 50};
+		this.cursorBlinkController = {'dt': 0, 'interval': cursorInterval || 750};
+		this.appendTextController = {'dt': 0, 'interval': textInterval || 50};
 		this.time = 0;
 		this.callback = callback;
 	}
@@ -98,8 +98,7 @@ class Texter {
 
 $(window).load(function() {
 	let interactiveDiv = document.getElementById("column1_1");
-	let myTexter = new Texter(interactiveDiv, message, 0, 100, true);
-
+	let myTexter = new Texter(interactiveDiv, message, 0, 750, 50, true);
 
 	function run() {
 		
