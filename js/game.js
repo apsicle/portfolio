@@ -112,7 +112,15 @@ $(window).load(function() {
 
 		requestAnimationFrame(run);
 	}
-	run();
+	let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+	if (isChrome) {
+		run();
+	}
+	else {
+		myTexter.showAll();
+		myTexter.target.style.cursor="default";
+	}
+	
 
 	$(interactiveDiv).click(function() {
 		// closure here so that "this" will refer to object myTexter instead of scope of .click call (the p#column1);
