@@ -4,8 +4,8 @@ let cursorHTML = "<img src='files/cursor1.png' width='25' height='25' align=''>"
 
 let message = "Hi, I’m Ryan. I grew up a computer geek and nature lover. I finished my degree in Computational and \
 Applied Mathematics and Statistics in May 2016, completing my thesis work on population network models of invasive \
-species. After a bit of a rut dealing with a chronic back injury, I moved to NYC to attend Recurse Center. I went from \
-building websites with HTML, CSS, and Javascript, to development with web APIs, Heroku and Node, Python and Flask, to \
+species. After graduation, I attended Recurse Center. I went from writing R and Python scripts to \
+building websites with HTML, CSS, and Javascript, to development with web APIs, React and Node, and Python and Flask, to \
 the wonderful world of algorithmic art in p5, game development in GML, Lua, and LÖVE. Through it all I've found that \
 what I love most about being a developer is being able to craft experiences for people to enjoy."
 
