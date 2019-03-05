@@ -23,6 +23,7 @@ class Texter {
 		// HTML target to append to, message to append, index is 
 		this.target = target;
 		this.message = message;
+		this.messageSoFar = "";
 		this.index = index;
 		this.active = active;
 		this.cursorOn = false;
@@ -55,8 +56,9 @@ class Texter {
 	appendText() {
 	// Given an array, "message", append the next element of the array.
 		if (this.index < this.message.length) {
-			this.target.innerHTML = this.target.innerText;
-			$(this.target).append(this.message[this.index++]);
+			// this.target.innerHTML = this.target.innerText;
+			this.messageSoFar = this.messageSoFar.slice() + this.message[this.index++];
+			$(this.target).text(this.messageSoFar);
 			$(this.target).append(cursorHTML);
 		}
 		else {
@@ -122,7 +124,7 @@ $(window).load(function() {
 	}
 	
 
-	$(interactiveDiv).click(function() {
+	$('#about_page').click(function() {
 		// closure here so that "this" will refer to object myTexter instead of scope of .click call (the p#column1);
 		myTexter.showAll();
 	});
